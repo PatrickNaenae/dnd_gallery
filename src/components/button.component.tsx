@@ -9,7 +9,11 @@ export const LoginButton = () => {
 		<button
 			className={clsx(style.button85)}
 			role='button'
-			onClick={() => signIn(undefined, { callbackUrl: "/gallery" })}>
+			onClick={() =>
+				signIn(undefined, {
+					callbackUrl: "https://dndgallery.vercel.app/",
+				})
+			}>
 			Login
 		</button>
 	);
