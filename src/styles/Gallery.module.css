@@ -1,0 +1,46 @@
+.cardContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	margin: 8px;
+	padding: 8px;
+	transition: transform 0.2s ease-in-out; 
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+}
+
+.tags {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	margin-top: 2px;
+}
+
+.tag {
+  background-color: #4a5568;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card.isDragging {
+	border: 2px dashed #333; 
+}
+
+.card.isDraggingOver {
+	border: 2px dashed #333; 
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
