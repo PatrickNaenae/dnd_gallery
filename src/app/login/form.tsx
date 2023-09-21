@@ -14,7 +14,7 @@ export const LoginForm = () => {
 	const [error, setError] = useState("");
 
 	const searchParams = useSearchParams();
-	const callbackUrl = "https://www.dndgallery.com/gallery";
+	const callbackUrl = searchParams.get("callbackUrl") || "/gallery";
 
 	const onSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
