@@ -11,7 +11,7 @@ export const LoginButton = () => {
 			role='button'
 			onClick={() =>
 				signIn(undefined, {
-					callbackUrl: "https://dndgallery.vercel.app/",
+					callbackUrl: "/gallery",
 				})
 			}>
 			Login
