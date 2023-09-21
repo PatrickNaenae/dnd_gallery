@@ -4,6 +4,9 @@ import { LoginButton } from "@/components/button.component";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  
+console.log(process.env.NEXTAUTH_URL);
+
 	return (
 		<main
 			className='flex flex-col justify-center items-center w-[100vw] h-[100vh] overflow-hidden'
